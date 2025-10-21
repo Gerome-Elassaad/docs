@@ -3,9 +3,9 @@
   "theme": "aspen",
   "name": "CodinIT",
   "colors": {
-    "primary": "#3B82F6",
-    "light": "#F8FAFC",
-    "dark": "#0F172A"
+    "primary": "#3100FF",
+    "light": "#0C83F2",
+    "dark": "#0C83F2"
   },
   "favicon": "/favicon.ico",
   "navigation": {
@@ -177,8 +177,8 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:gerome.e24@gmail.com"
+        "label": "Issues",
+        "href": "https://github.com/Gerome-Elassaad/codinit-app"
       }
     ],
     "primary": {
