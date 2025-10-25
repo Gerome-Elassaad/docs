@@ -23,7 +23,7 @@ This is a Mintlify documentation site with the following architecture:
 - **MDX files**: Documentation content organized in directories matching the navigation structure
   - `/getting-started/`: Installation and first project guides
   - `/features/`: Feature documentation including development tools
-   - `/features/development`: Feature documentation including development tools
+  - `/features/development`: Feature documentation including development tools
   - `/providers/`: Cloud AI provider guides (Anthropic, OpenAI, Google, etc.)
   - `/integrations/`: Third-party integrations (Git, Supabase, Netlify, Vercel)
   - `/prompting/`: Prompt engineering guidance
