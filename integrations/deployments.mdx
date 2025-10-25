@@ -8,12 +8,7 @@ description: "Deploy your applications to Netlify, Vercel, and other platforms w
 
 CodinIT provides seamless integration with major deployment platforms, allowing you to deploy your applications with a single click or automated triggers. Whether you're using static site generators, full-stack frameworks, or serverless functions, CodinIT supports your preferred deployment strategy.
 
-<Card
-  title="Deploy Now"
-  icon="play"
-  href="/quickstart"
-  horizontal
->
+<Card title="Deploy Now" icon="play" horizontal href="/quickstart">
   Ready to deploy? Check our quickstart guide to get your applications live in minutes.
 </Card>
 
@@ -65,12 +60,7 @@ CodinIT provides seamless integration with major deployment platforms, allowing 
 
 Netlify provides a powerful platform for deploying modern web applications with continuous deployment, global CDN, and serverless functions. CodinIT's Netlify integration offers complete deployment automation and management.
 
-<Card
-  title="Get Netlify API Token"
-  icon="key"
-  href="https://app.netlify.com/user/applications"
-  horizontal
->
+<Card title="Get Netlify API Token" icon="key" horizontal href="https://app.netlify.com/user/applications">
   Create your personal access token to enable Netlify deployments.
 </Card>
 
@@ -116,19 +106,15 @@ Netlify provides a powerful platform for deploying modern web applications with 
   <Step title="Create Netlify Account">
     Visit [Netlify](https://netlify.com) and create your account if you haven't already.
   </Step>
-
   <Step title="Generate Personal Access Token">
-    Go to **User Settings > Applications** and click **"Generate new token"**.
+    Go to **User Settings \> Applications** and click **"Generate new token"**.
   </Step>
-
   <Step title="Configure in CodinIT">
-    Navigate to **Settings > Deployments** and add your Netlify token.
+    Navigate to **Settings \> Deployments** and add your Netlify token.
   </Step>
-
   <Step title="Connect Git Repository (Optional)">
     Link your GitHub/GitLab repository for automatic deployments.
   </Step>
-
   <Step title="Deploy Your Site">
     Click **"Deploy to Netlify"** to publish your application instantly.
   </Step>
@@ -136,11 +122,11 @@ Netlify provides a powerful platform for deploying modern web applications with 
 
 ### Configuration Options
 
-<ParamField name="NETLIFY_ACCESS_TOKEN" type="string" required>
+<ParamField type="string" required>
   Your Netlify personal access token. Get this from [Netlify Applications](https://app.netlify.com/user/applications).
 </ParamField>
 
-<ParamField name="NETLIFY_SITE_NAME" type="string">
+<ParamField type="string">
   Custom site name for new deployments. If not provided, a unique name will be generated.
 </ParamField>
 
@@ -150,12 +136,7 @@ Netlify provides a powerful platform for deploying modern web applications with 
 
 Vercel is the optimal platform for deploying Next.js applications and modern React frameworks. CodinIT provides full Vercel integration for seamless deployments with edge computing capabilities.
 
-<Card
-  title="Get Vercel API Token"
-  icon="key"
-  href="https://vercel.com/account/tokens"
-  horizontal
->
+<Card title="Get Vercel API Token" icon="key" horizontal href="https://vercel.com/account/tokens">
   Create your Vercel API token to enable automated deployments.
 </Card>
 
@@ -201,19 +182,15 @@ Vercel is the optimal platform for deploying Next.js applications and modern Rea
   <Step title="Connect Vercel Account">
     Visit [Vercel Dashboard](https://vercel.com/dashboard) and ensure you're logged in.
   </Step>
-
   <Step title="Create API Token">
-    Go to **Settings > Tokens** and click **"Create Token"**.
+    Go to **Settings \> Tokens** and click **"Create Token"**.
   </Step>
-
   <Step title="Configure in CodinIT">
-    Navigate to **Settings > Deployments** and add your Vercel token.
+    Navigate to **Settings \> Deployments** and add your Vercel token.
   </Step>
-
   <Step title="Connect Repository (Optional)">
     Import your GitHub/GitLab repository for automatic deployments.
   </Step>
-
   <Step title="Deploy Application">
     Click **"Deploy to Vercel"** to launch your application on the edge.
   </Step>
@@ -221,11 +198,11 @@ Vercel is the optimal platform for deploying Next.js applications and modern Rea
 
 ### Configuration Options
 
-<ParamField name="VERCEL_ACCESS_TOKEN" type="string" required>
+<ParamField type="string" required>
   Your Vercel access token. Get this from [Vercel Tokens](https://vercel.com/account/tokens).
 </ParamField>
 
-<ParamField name="VERCEL_TEAM_ID" type="string">
+<ParamField type="string">
   Team ID for organization deployments. Leave empty for personal projects.
 </ParamField>
 
@@ -235,12 +212,7 @@ Vercel is the optimal platform for deploying Next.js applications and modern Rea
 
 Supabase provides a complete backend-as-a-service with real-time database, authentication, and storage. CodinIT's Supabase integration enables seamless database management and deployment.
 
-<Card
-  title="Get Supabase Access Token"
-  icon="key"
-  href="https://app.supabase.com/account/tokens"
-  horizontal
->
+<Card title="Get Supabase Access Token" icon="key" horizontal href="https://app.supabase.com/account/tokens">
   Create your Supabase access token for database operations.
 </Card>
 
@@ -286,19 +258,15 @@ Supabase provides a complete backend-as-a-service with real-time database, authe
   <Step title="Create Supabase Project">
     Visit [Supabase Dashboard](https://app.supabase.com) and create a new project.
   </Step>
-
   <Step title="Generate Access Token">
-    Go to **Settings > API** and copy your project API keys.
+    Go to **Settings \> API** and copy your project API keys.
   </Step>
-
   <Step title="Configure Database Connection">
-    Navigate to **Settings > Database** in Supabase and note your connection details.
+    Navigate to **Settings \> Database** in Supabase and note your connection details.
   </Step>
-
   <Step title="Configure in CodinIT">
-    Navigate to **Settings > Database** and add your Supabase credentials.
+    Navigate to **Settings \> Database** and add your Supabase credentials.
   </Step>
-
   <Step title="Run Database Operations">
     Start creating tables, running queries, and deploying schema changes.
   </Step>
@@ -306,15 +274,15 @@ Supabase provides a complete backend-as-a-service with real-time database, authe
 
 ### Configuration Options
 
-<ParamField name="VITE_SUPABASE_URL" type="string" required>
+<ParamField type="string" required>
   Your Supabase project URL (e.g., `https://your-project.supabase.co`).
 </ParamField>
 
-<ParamField name="VITE_SUPABASE_ANON_KEY" type="string" required>
+<ParamField type="string" required>
   Your Supabase anonymous/public API key for client-side operations.
 </ParamField>
 
-<ParamField name="VITE_SUPABASE_ACCESS_TOKEN" type="string">
+<ParamField type="string">
   Your Supabase access token for server-side database operations.
 </ParamField>
 
@@ -324,12 +292,7 @@ Supabase provides a complete backend-as-a-service with real-time database, authe
 
 Connect your Git repositories to enable automatic deployments and version control integration. CodinIT supports both GitHub and GitLab for seamless CI/CD workflows.
 
-<Card
-  title="Connect Git Repository"
-  icon="github"
-  href="#git-setup"
-  horizontal
->
+<Card title="Connect Git Repository" icon="github" horizontal href="#git-setup">
   Link your repositories for automatic deployments and collaboration features.
 </Card>
 
@@ -373,17 +336,14 @@ Connect your Git repositories to enable automatic deployments and version contro
 
 <Steps>
   <Step title="Create GitHub Personal Access Token">
-    Go to **GitHub Settings > Developer settings > Personal access tokens**.
+    Go to **GitHub Settings \> Developer settings \> Personal access tokens**.
   </Step>
-
   <Step title="Configure Token Permissions">
     Enable **repo** and **workflow** permissions for deployment access.
   </Step>
-
   <Step title="Add Repository to CodinIT">
-    Navigate to **Settings > Git** and connect your GitHub account.
+    Navigate to **Settings \> Git** and connect your GitHub account.
   </Step>
-
   <Step title="Enable Automatic Deployments">
     Configure webhook URLs for push-triggered deployments.
   </Step>
@@ -393,17 +353,14 @@ Connect your Git repositories to enable automatic deployments and version contro
 
 <Steps>
   <Step title="Create GitLab Access Token">
-    Go to **GitLab User Settings > Access Tokens**.
+    Go to **GitLab User Settings \> Access Tokens**.
   </Step>
-
   <Step title="Configure Token Scopes">
     Enable **api** and **write_repository** scopes for deployment access.
   </Step>
-
   <Step title="Add Repository to CodinIT">
-    Navigate to **Settings > Git** and connect your GitLab account.
+    Navigate to **Settings \> Git** and connect your GitLab account.
   </Step>
-
   <Step title="Configure CI/CD Variables">
     Set up deployment tokens and environment variables.
   </Step>
@@ -414,6 +371,7 @@ Connect your Git repositories to enable automatic deployments and version contro
 ### Static Site Deployment
 
 <CodeGroup>
+
 ```bash Static Site Workflow
 # Deploy static sites (React, Vue, Angular, etc.)
 1. Build your application locally
@@ -422,11 +380,13 @@ Connect your Git repositories to enable automatic deployments and version contro
 4. Deploy with one click or push to trigger auto-deployment
 5. Monitor deployment status and access live site
 ```
+
 </CodeGroup>
 
 ### Full-Stack Application Deployment
 
 <CodeGroup>
+
 ```bash Full-Stack Workflow
 # Deploy applications with backend (Next.js, Nuxt.js, etc.)
 1. Configure database connections (Supabase/PostgreSQL)
@@ -436,11 +396,13 @@ Connect your Git repositories to enable automatic deployments and version contro
 5. Configure custom domains and SSL certificates
 6. Set up monitoring and error tracking
 ```
+
 </CodeGroup>
 
 ### Database-First Deployment
 
 <CodeGroup>
+
 ```bash Database Workflow
 # Deploy with Supabase integration
 1. Create database schema and migrations
@@ -450,6 +412,7 @@ Connect your Git repositories to enable automatic deployments and version contro
 5. Test database connections and API endpoints
 6. Monitor database performance and usage
 ```
+
 </CodeGroup>
 
 ## Best Practices
@@ -481,15 +444,12 @@ Connect your Git repositories to enable automatic deployments and version contro
   <Step title="Optimize Build Process">
     Configure build caching, asset optimization, and parallel processing for faster deployments.
   </Step>
-
   <Step title="Use CDN Features">
     Leverage platform-specific CDN features for global content delivery and performance.
   </Step>
-
   <Step title="Monitor Performance">
     Set up performance monitoring and alerting to identify and resolve issues quickly.
   </Step>
-
   <Step title="Scale Resources">
     Configure auto-scaling based on traffic patterns and resource utilization.
   </Step>
@@ -525,37 +485,38 @@ Connect your Git repositories to enable automatic deployments and version contro
     **Problem**: Deployments fail during the build process.
 
     **Solutions**:
+
     - Check build logs for specific error messages
     - Verify Node.js version compatibility
     - Ensure all dependencies are properly installed
     - Check for syntax errors in your code
     - Verify environment variables are correctly configured
   </Accordion>
-
   <Accordion title="Environment Variables Not Working">
     **Problem**: Application behaves differently in deployed environment.
 
     **Solutions**:
+
     - Verify environment variable names match exactly
     - Check variable values don't contain extra whitespace
     - Ensure variables are set for the correct environment
     - Restart the deployment after variable changes
   </Accordion>
-
   <Accordion title="Custom Domain Issues">
     **Problem**: Custom domain not working or showing SSL errors.
 
     **Solutions**:
+
     - Verify DNS records are correctly configured
     - Wait for SSL certificate propagation (can take up to 24 hours)
     - Check domain registrar settings
     - Ensure CNAME records point to correct platform URLs
   </Accordion>
-
   <Accordion title="Database Connection Errors">
     **Problem**: Application can't connect to database after deployment.
 
     **Solutions**:
+
     - Verify database credentials and connection strings
     - Check database is running and accessible
     - Ensure firewall rules allow connections from deployment platform
@@ -569,11 +530,9 @@ Connect your Git repositories to enable automatic deployments and version contro
   <Step title="Check Platform Status">
     Visit platform status pages to ensure services are operational.
   </Step>
-
   <Step title="Review Documentation">
     Check platform-specific documentation for detailed troubleshooting guides.
   </Step>
-
   <Step title="Contact Support">
     Reach out to platform support with deployment logs and error details.
   </Step>
