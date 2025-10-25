@@ -192,19 +192,24 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
       "github": "https://github.com/codinit-dev"
+    }
+  },
+  "seo": {
+    "metatags": {
+      "canonical": "https://docs.codinit.dev"
     }
   },
   "redirects": [
