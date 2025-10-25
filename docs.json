@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "aspen",
-  "name": "CodinIT",
+  "name": "Docs",
   "colors": {
     "primary": "#3100FF",
     "light": "#0C83F2",
@@ -68,6 +68,7 @@
               {
                 "group": "Alternative Providers",
                 "pages": [
+                  "providers/aws-bedrock",
                   "providers/groq",
                   "providers/deepseek",
                   "providers/fireworks",
@@ -93,7 +94,9 @@
           {
             "group": "Prompting",
             "pages": [
-              "prompting/prompt-engineering-guide"
+              "prompting/prompt-engineering-guide",
+              "prompting/prompting-effectively",
+              "prompting/plan-your-app"
             ]
           }
         ]
@@ -148,8 +151,8 @@
           {
             "group": "Help & Documentation",
             "pages": [
-              "frequently-asked-questions",
-              "troubleshooting"
+              "support/frequently-asked-questions",
+              "support/troubleshooting"
             ]
           }
         ]
@@ -264,6 +267,14 @@
     {
       "source": "/providers/togetherai",
       "destination": "/providers/openrouter"
+    },
+    {
+      "source": "/frequently-asked-questions",
+      "destination": "/support/frequently-asked-questions"
+    },
+    {
+      "source": "/troubleshooting",
+      "destination": "/support/troubleshooting"
     }
   ]
 }
