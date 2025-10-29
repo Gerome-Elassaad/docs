@@ -1,5 +1,4 @@
 ---
-canonical_url: "https://docs.codinit.dev/features/development/workbench"
 title: "Workbench"
 description: "Integrated development environment combining editor, terminal, preview, and collaboration tools"
 ---
@@ -36,7 +35,7 @@ CodinIT's Workbench is the central hub for your development workflow, seamlessly
 
 ## File Management System
 
-<Expandable title="File System Integration">
+<Expandable title="File System Integration" icon="folder-sync">
   <ResponseField name="WebContainer Sync" type="feature">
     Real-time synchronization between Workbench file system and WebContainer runtime
   </ResponseField>
@@ -121,7 +120,7 @@ CodinIT's Workbench is the central hub for your development workflow, seamlessly
 
 ### Team Development
 
-<Expandable title="Collaborative Workflows">
+<Expandable title="Collaborative Workflows" icon="users">
   <ResponseField name="Shared Sessions" type="feature">
     Collaborate with team members in real-time on the same project
   </ResponseField>
@@ -248,7 +247,7 @@ npm run deploy
 
 ### Workflow Customization
 
-<Expandable title="Custom Workflows">
+<Expandable title="Custom Workflows" icon="workflow">
   <ResponseField name="Build Scripts" type="feature">
     Customize build processes with pre-build, post-build, and deployment hooks
   </ResponseField>
@@ -315,19 +314,19 @@ npm run deploy
 ## Security & Privacy
 
 <AccordionGroup>
-<Accordion title="Data Protection">
+<Accordion title="Data Protection" icon="shield">
   **Client-Side Processing**: All code analysis and processing happens in your browser
 </Accordion>
 
-<Accordion title="No Data Persistence">
+<Accordion title="No Data Persistence" icon="database">
   **Ephemeral Storage**: Project data exists only in memory during active sessions
 </Accordion>
 
-<Accordion title="Secure Communication">
+<Accordion title="Secure Communication" icon="lock">
   **Encrypted Transport**: All network communication uses HTTPS encryption
 </Accordion>
 
-<Accordion title="Access Control">
+<Accordion title="Access Control" icon="key">
   **Granular Permissions**: Fine-grained control over who can access your projects
 </Accordion>
 </AccordionGroup>
@@ -355,7 +354,7 @@ npm run deploy
 ## Troubleshooting
 
 <AccordionGroup>
-<Accordion title="Layout Problems">
+<Accordion title="Layout Problems" icon="layout">
   **Error**: Panels not displaying correctly or layout not saving
 
   **Solutions**:
@@ -365,7 +364,7 @@ npm run deploy
   - Restart browser if layout issues persist
 </Accordion>
 
-<Accordion title="File Sync Issues">
+<Accordion title="File Sync Issues" icon="refresh-cw">
   **Error**: Files not updating in preview or terminal
 
   **Solutions**:
@@ -375,7 +374,7 @@ npm run deploy
   - Clear Workbench cache and reload
 </Accordion>
 
-<Accordion title="Performance Degradation">
+<Accordion title="Performance Degradation" icon="activity">
   **Error**: Workbench becoming slow or unresponsive
 
   **Solutions**:
@@ -385,7 +384,7 @@ npm run deploy
   - Disable unnecessary features for current workflow
 </Accordion>
 
-<Accordion title="Collaboration Issues">
+<Accordion title="Collaboration Issues" icon="users">
   **Error**: Problems with real-time collaboration features
 
   **Solutions**:
@@ -441,7 +440,7 @@ const templatePlugin: WorkbenchPlugin = {
 
 ### API Integration
 
-<Expandable title="REST API">
+<Expandable title="REST API" icon="code">
   <ResponseField name="File Operations" type="api">
     Programmatic access to all file operations and project management
   </ResponseField>

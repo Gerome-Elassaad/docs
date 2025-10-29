@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "aspen",
+  "theme": "palm",
   "name": "Docs",
   "colors": {
-    "primary": "#3100FF",
-    "light": "#0C83F2",
-    "dark": "#0C83F2"
+    "primary": "#3B82F6",
+    "light": "#F8FAFC",
+    "dark": "#0F172A"
   },
   "favicon": "/favicon.ico",
   "navigation": {
@@ -17,14 +17,14 @@
             "group": "Introduction",
             "pages": [
               "index",
+              "quickstart",
               "introduction/welcome"
             ]
           },
           {
             "group": "Getting Started",
             "pages": [
-              "quickstart",
-              "getting-started/installing-codinit",
+              "getting-started/installation",
               "getting-started/select-your-model",
               "getting-started/your-first-project"
             ]
@@ -55,7 +55,7 @@
           {
             "group": "Cloud Providers",
             "pages": [
-              "providers/provider-guide",
+              "providers/cloud-providers",
               {
                 "group": "Major AI Providers",
                 "pages": [
@@ -95,8 +95,11 @@
             "group": "Prompting",
             "pages": [
               "prompting/prompt-engineering-guide",
+              "prompting/discussion-mode",
+              "prompting/plan-your-app",
               "prompting/prompting-effectively",
-              "prompting/plan-your-app"
+              "prompting/discussion-mode",
+              "prompting/maximize-token-efficiency"
             ]
           }
         ]
@@ -140,7 +143,7 @@
           {
             "group": "MCP Integration",
             "pages": [
-              "mcp-integration/mcp"
+              "mcp/mcp-overview"
             ]
           }
         ]
@@ -152,7 +155,8 @@
             "group": "Help & Documentation",
             "pages": [
               "support/frequently-asked-questions",
-              "support/troubleshooting"
+              "support/troubleshooting",
+              "support/integration-issues"
             ]
           }
         ]
@@ -235,7 +239,7 @@
     },
     {
       "source": "/integrations/plugins",
-      "destination": "/mcp-integration/mcp"
+      "destination": "/mcp/mcp-overview"
     },
     {
       "source": "/models/anthropic",
