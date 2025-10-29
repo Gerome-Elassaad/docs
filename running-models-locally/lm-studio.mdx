@@ -1,8 +1,6 @@
 ---
-canonical_url: "https://docs.codinit.dev/running-models-locally/lm-studio"
 title: "LM Studio"
 description: "A quick guide to setting up LM Studio for local AI model execution with CodinIT."
-mode: "wide"
 ---
 
 ## Setting Up LM Studio with CodinIT
@@ -11,52 +9,39 @@ Run AI models locally using LM Studio with CodinIT.
 
 ### Prerequisites
 
-- Windows, macOS, or Linux computer with AVX2 support
+* Windows, macOS, or Linux computer with AVX2 support
 
 ### Setup Steps
 
 #### 1. Install LM Studio
 
-- Visit [lmstudio.ai](https://lmstudio.ai)
-- Download and install for your operating system
+* Visit [lmstudio.ai](https://lmstudio.ai)
+* Download and install for your operating system
 
-<Frame>
-  ![LM Studio download page](/assets/images/lmstudio.png)
-</Frame>
+![LM Studio download page](/assets/images/lmstudio.png)
 
 #### 2. Launch LM Studio
 
-- Open the installed application
-- You'll see four tabs on the left: **Chat**, **Developer** (where you will start the server), **My Models** (where your downloaded models are stored), **Discover** (add new models)
+* Open the installed application
+* You'll see four tabs on the left: **Chat**, **Developer** (where you will start the server), **My Models** (where your downloaded models are stored), **Discover** (add new models)
 
-<Frame>
-  ![LM Studio interface overview](/assets/images/lmstudio2.png)
-</Frame>
+![LM Studio interface overview](/assets/images/lmstudio2.png)
 
 #### 3. Download a Model
 
-- Browse the "Discover" page
-- Select and download your preferred model
-- Wait for download to complete
+* Browse the "Discover" page
+* Select and download your preferred model
+* Wait for download to complete
 
-<Frame>
-  ![Downloading a model in LM Studio](/assets/gifs/lm-studio-download-model.gif)
-</Frame>
+![Downloading a model in LM Studio](/assets/gifs/lm-studio-download-model.gif)
 
 #### 4. Start the Server
 
-- Navigate to the "Developer" tab
-- Toggle the server switch to "Running"
-- Note: The server will run at `http://localhost:51732`
+* Navigate to the "Developer" tab
+* Toggle the server switch to "Running"
+* Note: The server will run at `http://localhost:51732`
 
-<Frame>
-  <img
-    src="/local-models.png"
-    alt="Starting the LM Studio server"
-    title="local models screencapture"
-    className="mx-auto"
-  />
-</Frame>
+![Starting the LM Studio server](/assets/images/lmstudio.png)
 
 ### Recommended Model and Settings
 
@@ -74,21 +59,21 @@ After loading your model in the Developer tab, configure these settings:
 
 Choose quantization based on your RAM:
 
-- **32GB RAM**: Use 4-bit quantization (~17GB download)
-- **64GB RAM**: Use 8-bit quantization (~32GB download) for better quality
-- **128GB+ RAM**: Consider full precision or larger models
+* **32GB RAM**: Use 4-bit quantization (\~17GB download)
+* **64GB RAM**: Use 8-bit quantization (\~32GB download) for better quality
+* **128GB+ RAM**: Consider full precision or larger models
 
 #### Model Format
 
-- **Mac (Apple Silicon)**: Use MLX format for optimized performance
-- **Windows/Linux**: Use GGUF format
+* **Mac (Apple Silicon)**: Use MLX format for optimized performance
+* **Windows/Linux**: Use GGUF format
 
 ### Important Notes
 
-- Start LM Studio before using with CodinIT
-- Keep LM Studio running in background
-- First model download may take several minutes depending on size
-- Models are stored locally after download
+* Start LM Studio before using with CodinIT
+* Keep LM Studio running in background
+* First model download may take several minutes depending on size
+* Models are stored locally after download
 
 ### Troubleshooting
 

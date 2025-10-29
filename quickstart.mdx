@@ -1,5 +1,5 @@
 ---
-canonical_url: "https://docs.codinit.dev/quickstart"
+canonical_url: "https://codinit.dev/quickstart"
 title: "Quickstart"
 description: "Get started with CodinIT's AI-powered development platform in minutes"
 ---
@@ -25,13 +25,40 @@ Step 1: Set up your development environment
     - Full-featured native application
 
     **VSCode (For Devs)**
-    - Open your Terminal
-    - ```git clone https://github.com/Gerome-Elassaad/codinit-app.git```
-    - ```cd codinit-app```
-    - ```pnpm install``` or ```npm install```
-    - ```cp .env.example .env.local```
-    - ```pnpm run dev```
-    - Then you will see it running on port ```5173```
+    - Open your Terminal and clone the repository:
+
+    ```bash
+    git clone https://github.com/Gerome-Elassaad/codinit-app.git
+    cd codinit-app
+    ```
+
+    - Install dependencies using your preferred package manager:
+
+    <CodeGroup>
+      <Code title="pnpm">
+        ```bash
+        pnpm install
+        cp .env.example .env.local
+        pnpm run dev
+        ```
+      </Code>
+      <Code title="npm">
+        ```bash
+        npm install
+        cp .env.example .env.local
+        npm run dev
+        ```
+      </Code>
+      <Code title="yarn">
+        ```bash
+        yarn install
+        cp .env.example .env.local
+        yarn dev
+        ```
+      </Code>
+    </CodeGroup>
+
+    - The app will run on port `5173`
 
     <Tip>Both versions offer Different features - choose based on your preference for native or web applications.</Tip>
   </Accordion>
@@ -53,7 +80,7 @@ Step 1: Set up your development environment
     **Essential Providers (Free tiers available)**
     - [OpenAI](https://platform.openai.com) - GPT-4o, GPT-3.5-turbo
     - [Anthropic](https://console.anthropic.com) - Claude 3.5 Sonnet
-    - [Google AI](https://aistudio.google.com) - Gemini 1.5 Pro/Flash
+    - [Google AI](https://aistudio.google.com) - Gemini 2.5 Pro/Flash
 
     **Optional Providers**
     - [DeepSeek](https://platform.deepseek.com) - Cost-effective coding models
@@ -105,7 +132,7 @@ Now that you're set up with CodinIT, explore these powerful features:
 
 <CardGroup cols={2}>
 
-<Card title="AI Provider Guide" icon="plug" href="/providers/provider-guide">
+<Card title="AI Provider Guide" icon="plug" href="/providers/cloud-providers">
   Learn about all 19+ supported AI providers and choose the best ones for your needs.
 </Card>
 
@@ -129,8 +156,8 @@ Now that you're set up with CodinIT, explore these powerful features:
   Build full-stack apps with built-in database, auth, and real-time features.
 </Card>
 
-<Card title="MCP Protocol" icon="puzzle-piece" href="/mcp-integration/mcp">
-  Extend CodinIT's capabilities with external tools and services.
+<Card title="MCP Protocol" icon="plug" href="/mcp/mcp-overview">
+  Extend CodinIT's capabilities with your favourite tools in one place.
 </Card>
 
 <Card title="Advanced Features" icon="cog" href="/features/overview">
@@ -144,5 +171,5 @@ Now that you're set up with CodinIT, explore these powerful features:
 </CardGroup>
 
 <Info>
-  **Need help?** Check out our [troubleshooting guide](/troubleshooting) for common issues, or explore the [features overview](/features/overview) to discover everything CodinIT can do.
+  **Need help?** Check out our [troubleshooting guide](/support/troubleshooting) for common issues, or explore the [features overview](/features/overview) to discover everything CodinIT can do.
 </Info>

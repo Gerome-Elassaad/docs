@@ -1,8 +1,6 @@
 ---
-canonical_url: "https://docs.codinit.dev/prompting/prompting-effectively"
 title: "Prompt effectively"
 descriptiom: "Learn how to get the most out of using your tokens when building with CodinIT.dev."
-description: "Learn when building with CodinIT.dev, the quality of your results will often depend less on how well you know code."
 ---
 
 > Tips for writing better prompts
@@ -17,17 +15,13 @@ When you start with a clear, well-structured prompt, you set yourself up for suc
 
 Think of your prompt as a blueprint. The clearer your blueprint, the smoother the build process will be and the less likely you’ll need to rework things down the line.
 
-Not sure where to begin? Our guide on [Planning your app](/getting-started/your-first-project.mdx) walks you through practical ways to organize your ideas and start with a powerful first prompt.
+Not sure where to begin? Our guide on [Planning your app](/getting-started/your-first-project) walks you through practical ways to organize your ideas and start with a powerful first prompt.
 
 ## Automatically improve your prompt
 
 CodinIT.dev has a built-in feature to help you create better prompts:
 
-<img
-  style={{ borderRadius:"0.5rem" }}
-  light="/assets/images/prompt-tools-light.png"
-  dark="/assets/images/prompt-tools-dark.png"
-/>
+![Prompt tools](/assets/images/prompt-tools-dark.png)
 
 1. Write your prompt in the chatbox.
 2. In the bottom-left corner of the chatbox, click the **plus icon**, then click **Enhance prompt**.
@@ -37,26 +31,32 @@ CodinIT.dev has a built-in feature to help you create better prompts:
 
 The image below compares two websites created with the same prompt. The version on the right was built with a simple prompt, while the version on the left was enhanced to produce a more engaging homepage and additional pages.
 
-<Frame>
-  <img
-    className="block mx-auto"
-    src="/assets/images/prompt-comparison.png"
-    alt="Screenshot of DNS records management screen within Cloud settings."
-  />
-</Frame>
+![Prompt comparison](/assets/images/prompt-comparison.png)
 
 ## Prompting quick tips
 
-- Start with the application architecture, including your choice of tools, frameworks, and so on.
-- [Clear context](/prompting/prompt-engineering-guide.mdx) regularly, so long as you're sure CodinIT.dev doesn't need to remember anything short-term.
-- Add individual components and features, one by one.
-- Add in details in each component with small, specific prompts. Avoid overwhelming the LLM with too many instructions and requirements at once.
-- Be explicit about what should and shouldn't change. You can [tell CodinIT.dev to change or not change specific files](#guide). When possible, refer to specific elements, classes, or functions to guide CodinIT.dev to the exact place where you want the changes made.
-- Don't expect the LLM to have common sense.
+* Start with the application architecture, including your choice of tools, frameworks, and so on.
+* [Clear context](/prompting/prompt-engineering-guide) regularly, so long as you're sure CodinIT.dev doesn't need to remember anything short-term.
+* Add individual components and features, one by one.
+* Add in details in each component with small, specific prompts. Avoid overwhelming the LLM with too many instructions and requirements at once.
+* Be explicit about what should and shouldn't change. You can [tell CodinIT.dev to change or not change specific files](#guide). When possible, refer to specific elements, classes, or functions to guide CodinIT.dev to the exact place where you want the changes made.
+* Don't expect the LLM to have common sense.
 
 ## Guide CodinIT.dev's focus
 
-<GuideCodinIT.devsFocus />
+You can direct CodinIT.dev to focus on specific files or avoid changing certain parts of your project:
+
+**Tell CodinIT.dev what to change:**
+* "Update the button styling in `components/Button.tsx`"
+* "Add a new function to `utils/helpers.js`"
+* "Modify only the header component"
+
+**Tell CodinIT.dev what NOT to change:**
+* "Don't modify the authentication logic"
+* "Keep the existing API routes unchanged"
+* "Update the styling but don't touch the component logic"
+
+Being specific about files, functions, or components helps CodinIT.dev make precise changes without affecting unrelated parts of your project.
 
 ## Troubleshooting prompting
 
@@ -82,8 +82,8 @@ Project and system prompts are extra instructions sent to CodinIT.dev. They tell
 
 Project versus system prompts:
 
-- The project prompt is specific to your current project.
-- The system prompt applies to every project.
+* The project prompt is specific to your current project.
+* The system prompt applies to every project.
 
 To update project and system knowledge, follow these steps:
 
@@ -96,7 +96,8 @@ To update project and system knowledge, follow these steps:
 3. Update the **Project Prompt** or **Global System Prompt**.
 4. Click **Save prompt**. CodinIT.dev will confirm whether the prompt updated successfully.
 
-```txt
+
+```txt  theme={"system"}
 For all designs I ask you to make, have them be beautiful, not cookie cutter. Make webpages that are fully featured and worthy for production.
 
 By default, this template supports JSX syntax with Tailwind CSS classes, the shadcn/ui library, React hooks, and Lucide React for icons. Do not install other packages for UI themes, icons, etc unless absolutely necessary or I request them.
@@ -108,4 +109,4 @@ Use stock photos from unsplash where appropriate.
 
 ### Tips for the project or system prompts
 
-- Include instructions to CodinIT.dev to only change relevant code.
+* Include instructions to CodinIT.dev to only change relevant code.

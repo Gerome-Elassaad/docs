@@ -1,9 +1,6 @@
 ---
-canonical_url: "https://docs.codinit.dev/running-models-locally/local-model-setup"
-title: "Guide"
+title: "Local models setup"
 description: "Run AI models locally on your own hardware for privacy, cost savings, and offline development"
-sidebarTitle: "Local models guide"
-mode: "wide"
 ---
 
 ## Running Models Locally with CodinIT
@@ -36,41 +33,41 @@ Primary Recommendation: Qwen3 Coder 30B
 
 After extensive testing, **Qwen3 Coder 30B** is the most reliable model under 70B parameters for CodinIT:
 
-- **256K native context window** - Handle entire repositories
-- **Strong tool-use capabilities** - Reliable command execution
-- **Repository-scale understanding** - Maintains context across files
-- **Proven reliability** - Consistent outputs with CodinIT's tool format
+* **256K native context window** - Handle entire repositories
+* **Strong tool-use capabilities** - Reliable command execution
+* **Repository-scale understanding** - Maintains context across files
+* **Proven reliability** - Consistent outputs with CodinIT's tool format
 
 Download sizes:
 
-- 4-bit: ~17GB (recommended for 32GB RAM)
-- 8-bit: ~32GB (recommended for 64GB RAM)
-- 16-bit: ~60GB (requires 128GB+ RAM)
+* 4-bit: \~17GB (recommended for 32GB RAM)
+* 8-bit: \~32GB (recommended for 64GB RAM)
+* 16-bit: \~60GB (requires 128GB+ RAM)
 
 ### Why Not Smaller Models?
 
 Most models under 30B parameters (7B-20B) fail with CodinIT because they:
 
-- Produce broken tool-use outputs
-- Refuse to execute commands
-- Can't maintain conversation context
-- Struggle with complex coding tasks
+* Produce broken tool-use outputs
+* Refuse to execute commands
+* Can't maintain conversation context
+* Struggle with complex coding tasks
 
 ## Runtime Options
 
 LM Studio
 
-- **Pros**: User-friendly GUI, easy model management, built-in server
-- **Cons**: Memory overhead from UI, limited to single model at a time
-- **Best for**: Desktop users who want simplicity
-- [Setup Guide →](/running-models-locally/lm-studio)
+* **Pros**: User-friendly GUI, easy model management, built-in server
+* **Cons**: Memory overhead from UI, limited to single model at a time
+* **Best for**: Desktop users who want simplicity
+* [Setup Guide →](/running-models-locally/lm-studio)
 
 ### Ollama
 
-- **Pros**: Command-line based, lower memory overhead, scriptable
-- **Cons**: Requires terminal comfort, manual model management
-- **Best for**: Power users and server deployments
-- [Setup Guide →](/providers/ollama)
+* **Pros**: Command-line based, lower memory overhead, scriptable
+* **Cons**: Requires terminal comfort, manual model management
+* **Best for**: Power users and server deployments
+* [Setup Guide →](/providers/ollama)
 
 ## Critical Configuration
 
@@ -78,20 +75,20 @@ Required Settings
 
 **In CodinIT:**
 
-- ✅ Enable "Use Compact Prompt" - Reduces prompt size by 90%
-- ✅ Set appropriate model in settings
-- ✅ Configure Base URL to match your server
+* ✅ Enable "Use Compact Prompt" - Reduces prompt size by 90%
+* ✅ Set appropriate model in settings
+* ✅ Configure Base URL to match your server
 
 **In LM Studio:**
 
-- Context Length: `262144` (maximum)
-- KV Cache Quantization: `OFF` (critical for proper function)
-- Flash Attention: `ON` (if available on your hardware)
+* Context Length: `262144` (maximum)
+* KV Cache Quantization: `OFF` (critical for proper function)
+* Flash Attention: `ON` (if available on your hardware)
 
 **In Ollama:**
 
-- Set context window: `num_ctx 262144`
-- Enable flash attention if supported
+* Set context window: `num_ctx 262144`
+* Enable flash attention if supported
 
 ### Understanding Quantization
 
@@ -99,34 +96,34 @@ Quantization reduces model precision to fit on consumer hardware:
 
 | Type   | Size Reduction | Quality | Use Case                           |
 | ------ | -------------- | ------- | ---------------------------------- |
-| 4-bit  | ~75%           | Good    | Most coding tasks, limited RAM     |
-| 8-bit  | ~50%           | Better  | Professional work, more nuance     |
+| 4-bit  | \~75%          | Good    | Most coding tasks, limited RAM     |
+| 8-bit  | \~50%          | Better  | Professional work, more nuance     |
 | 16-bit | None           | Best    | Maximum quality, requires high RAM |
 
 ### Model Formats
 
 **GGUF (Universal)**
 
-- Works on all platforms (Windows, Linux, Mac)
-- Extensive quantization options
-- Broader tool compatibility
-- Recommended for most users
+* Works on all platforms (Windows, Linux, Mac)
+* Extensive quantization options
+* Broader tool compatibility
+* Recommended for most users
 
 **MLX (Mac only)**
 
-- Optimized for Apple Silicon (M1/M2/M3)
-- Leverages Metal and AMX acceleration
-- Faster inference on Mac
-- Requires macOS 13+
+* Optimized for Apple Silicon (M1/M2/M3)
+* Leverages Metal and AMX acceleration
+* Faster inference on Mac
+* Requires macOS 13+
 
 ## Performance Expectations
 
 What's Normal
 
-- **Initial load time**: 10-30 seconds for model warmup
-- **Token generation**: 5-20 tokens/second on consumer hardware
-- **Context processing**: Slower with large codebases
-- **Memory usage**: Close to your quantization size
+* **Initial load time**: 10-30 seconds for model warmup
+* **Token generation**: 5-20 tokens/second on consumer hardware
+* **Context processing**: Slower with large codebases
+* **Memory usage**: Close to your quantization size
 
 ### Performance Tips
 
@@ -142,22 +139,22 @@ When to Use Local Models
 
 ✅ **Perfect for:**
 
-- Offline development environments
-- Privacy-sensitive projects
-- Learning without API costs
-- Unlimited experimentation
-- Air-gapped environments
-- Cost-conscious development
+* Offline development environments
+* Privacy-sensitive projects
+* Learning without API costs
+* Unlimited experimentation
+* Air-gapped environments
+* Cost-conscious development
 
 ### When to Use Cloud Models
 
 ☁️ **Better for:**
 
-- Very large codebases (\>256K tokens)
-- Multi-hour refactoring sessions
-- Teams needing consistent performance
-- Latest model capabilities
-- Time-critical projects
+* Very large codebases (>256K tokens)
+* Multi-hour refactoring sessions
+* Teams needing consistent performance
+* Latest model capabilities
+* Time-critical projects
 
 ## Troubleshooting
 
@@ -165,29 +162,29 @@ Common Issues & Solutions
 
 **"Shell integration unavailable"**
 
-- Switch to bash in CodinIT Settings → Terminal → Default Terminal Profile
-- Resolves 90% of terminal integration problems
+* Switch to bash in CodinIT Settings → Terminal → Default Terminal Profile
+* Resolves 90% of terminal integration problems
 
 **"No connection could be made"**
 
-- Verify server is running (LM Studio or Ollama)
-- Check Base URL matches server address
-- Ensure no firewall blocking connection
-- Default ports: LM Studio (1234), Ollama (11434)
+* Verify server is running (LM Studio or Ollama)
+* Check Base URL matches server address
+* Ensure no firewall blocking connection
+* Default ports: LM Studio (1234), Ollama (11434)
 
 **Slow or incomplete responses**
 
-- Normal for local models (5-20 tokens/sec typical)
-- Try smaller quantization (4-bit instead of 8-bit)
-- Enable compact prompts if not already
-- Reduce context window size
+* Normal for local models (5-20 tokens/sec typical)
+* Try smaller quantization (4-bit instead of 8-bit)
+* Enable compact prompts if not already
+* Reduce context window size
 
 **Model confusion or errors**
 
-- Verify KV Cache Quantization is OFF (LM Studio)
-- Ensure compact prompts enabled
-- Check context length set to maximum
-- Confirm sufficient RAM for quantization
+* Verify KV Cache Quantization is OFF (LM Studio)
+* Ensure compact prompts enabled
+* Check context length set to maximum
+* Confirm sufficient RAM for quantization
 
 ### Performance Optimization
 
@@ -210,24 +207,22 @@ Common Issues & Solutions
 
 Multi-GPU Setup If you have multiple GPUs, you can split model layers:
 
-- LM Studio: Automatic GPU detection
-- Ollama: Set `num_gpu` parameter
+* LM Studio: Automatic GPU detection
+* Ollama: Set `num_gpu` parameter
 
 ### Custom Models
 
 While Qwen3 Coder 30B is recommended, you can experiment with:
 
-- DeepSeek Coder V2
-- Codestral 22B
-- StarCoder2 15B
+* DeepSeek Coder V2
+* Codestral 22B
+* StarCoder2 15B
 
 Note: These may require additional configuration and testing.
 
 ## Community & Support
 
-- **Discord**: [Join our community](https://discord.gg/codinit) for real-time help
-- **Reddit**: [r/codinit](https://www.reddit.com/r/codinit/) for discussions
-- **GitHub**: [Report issues](https://github.com/gerome-elassaad/codinit-app/issues)
+* **GitHub**: [Report issues](https://github.com/gerome-elassaad/codinit-app/issues)
 
 ## Next Steps
 
@@ -237,6 +232,7 @@ Ready to get started? Choose your path:
   <Card title="LM Studio Setup" icon="desktop" href="/running-models-locally/lm-studio">
     User-friendly GUI approach with detailed configuration guide
   </Card>
+
   <Card title="Ollama Setup" icon="terminal" href="/providers/ollama">
     Command-line setup for power users and automation
   </Card>
